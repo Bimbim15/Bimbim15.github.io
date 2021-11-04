@@ -1,0 +1,45 @@
+<html>
+
+    <body>
+    	<style>
+
+    body {
+
+      text-align: center;
+
+      background-color: rgb(255, 255, 255);
+
+    }
+      </style>
+
+        <h1>Hai Calon pengguna Bimbee Bot di bawah ini ada kode verivikasi kamu</h1>
+
+        <img src="https://telegra.ph/file/6be61453a43c20fefa29f.jpg">
+
+        <h1>Kode kamu : 9797, kirim ke nomor Bot bimbee</h1>
+
+        <button id='btn_mau' onclick='alert("9797")'>KODE KAMU</button>&nbsp;
+
+        <button id='btn_gamau' onclick='gamau(this)' style='position:absolute'>Gamau</button>
+
+    </body>
+
+    <script>
+
+        function gamau(id){
+
+            var mau = document.getElementById('btn_mau');
+
+            var i = Math.floor(Math.random()*300)+1;
+
+            var j = Math.floor(Math.random()*100)+mau.offsetTop;
+
+            id.style.left = i+'px';
+
+            id.style.top = j+'px';
+
+        }
+
+    </script>
+
+</html>
