@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tik-Tak-Tu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-2089424943761362",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
+<body>
+    <header>Tic-Tac-Tue</header>
+
+    <div id="mode">
+        <h1>Pilih mode</h1>
+        <button type="button" onclick="personWindow();start2PlayerMode();">Main sendiri</button>
+        <button type="button" onclick="levelSelectWindow();">Main sama Bimbim</button>
+    </div>
+
+    <div id="level">
+        <button type="button" onclick="selectLevel(this);computerWindow();">Mudah</button>
+        <button type="button" onclick="selectLevel(this);computerWindow();">Medium</button>
+        <button type="button" onclick="selectLevel(this);computerWindow();">Sumsah</button>
+    </div>
+    <button id="back2" type="button" onclick="back2()">Kembali</button>
+
+    <div id="game">
+        <h1 id="status"></h1>
+        <table>
+            <tr>
+                <td id="b1" onclick="clickevent(this)"></td>
+                <td id="b2" onclick="clickevent(this)"></td>
+                <td id="b3" onclick="clickevent(this)"></td>
+            </tr>
+
+            <tr>
+                <td id="b4" onclick="clickevent(this)"></td>
+                <td id="b5" onclick="clickevent(this)"></td>
+                <td id="b6" onclick="clickevent(this)"></td>
+            </tr>
+            <tr>
+                <td id="b7" onclick="clickevent(this)"></td>
+                <td id="b8" onclick="clickevent(this)"></td>
+                <td id="b9" onclick="clickevent(this)"></td>
+            </tr>
+        </table>
+
+        <button type="button" onclick="reset()">Main Lagi</button>
+        <button type="button" onclick="back()">Udahan</button>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
